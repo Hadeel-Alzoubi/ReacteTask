@@ -1,0 +1,58 @@
+Backend/API:
+        Use .NET Core to create a RESTful API to handle the CRUD operations.
+        Set up a SQL Server database to store the auditing data.
+        Create endpoints for the following operations:
+            Create an audit entry
+            Retrieve all audit entries
+            Retrieve a specific audit entry by ID
+            Update an audit entry
+            Delete an audit entry
+
+    Frontend:
+        Use React to create the user interface for the CRUD operations.
+        Use Bootstrap or any other CSS framework for the frontend design.
+        Create pages/components for the following functionalities:
+            List all audit entries
+            View details of a specific audit entry
+            Add a new audit entry
+            Edit an existing audit entry
+            Delete an audit entry (with confirmation)
+
+    Integration:
+        Connect the frontend and backend by making API calls from the React components to the .NET Core API endpoints.
+        Ensure that the frontend communicates with the backend for all CRUD operations.
+
+    Additional considerations:
+        Implement input validation on the backend to ensure data integrity.
+        Handle errors and display appropriate error messages to the user.
+        Implement pagination or infinite scrolling for the list of audit entries if there are a large number of records.
+
+
+This task will assess your understanding of .NET Core APIs, React, database integration, and frontend design using Bootstrap.
+ It will also test your ability to handle CRUD operations and implement a responsive user interface.
+ 
+Models:
+
+
+
+    Audit Model:
+        Id: Unique identifier for each audit entry.
+        Action: The action performed, such as "Create", "Read", "Update", or "Delete".
+        Employee: The entity or object being audited.
+        EmployeeId: The unique identifier of the entity being audited.
+        User: The user who performed the action.
+        Timestamp: The timestamp of when the action was performed.
+
+    User Model:
+        Id: Unique identifier for each user.
+        Name: The name of the user.
+
+    Employee Model:
+        Id: Unique identifier for each employee.
+        Name: The name of the employee.
+        Department: The department to which the employee belongs.
+        Position: The position or role of the employee.
+
+    Department Model:
+        Id: Unique identifier for each department.
+        Name: The name of the department.

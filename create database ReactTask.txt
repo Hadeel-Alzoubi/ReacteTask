@@ -1,0 +1,43 @@
+create database ReactTask
+
+create table Audit
+(
+Id int primary key identity (1,1) ,
+Action varchar(50),
+Employee varchar(50), -- جهة التدقيق
+EmployeeId int,
+Userid int ,
+Timestamp datetime,
+
+foreign key (EmployeeId) references Employee (Id),
+foreign key (Userid) references Users (Id)
+);
+
+create table Users 
+(Id int primary key identity(1,1),
+name varchar(max)
+);
+
+create table Employee
+(
+Id int primary key identity (1,1),
+Name varchar(max),
+Department varchar(max),
+Position varchar(50)
+);
+
+create table Department
+(
+Id int primary key identity (1,1),
+Name varchar(max)
+);
+
+ALTER TABLE Employee
+DROP COLUMN Department;
+
+ALTER TABLE Employee
+ADD Department INT;
+
+ALTER TABLE Employee
+ADD CONSTRAINT FK_Employee_Department
+FOREIGN KEY (Department) REFERENCES Department(Id);
