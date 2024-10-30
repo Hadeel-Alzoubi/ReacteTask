@@ -20,7 +20,17 @@ namespace ReactTask
             builder.Services.AddDbContext<MyDbContext>(options =>
             options.UseSqlServer(builder.Configuration.GetConnectionString("YourConnectionString")));
 
+            builder.Services.AddCors(options =>
 
+            options.AddPolicy("Development", builder =>
+            {
+                builder.AllowAnyOrigin();
+                builder.AllowAnyMethod();
+                builder.AllowAnyHeader();
+            })
+
+
+            );
 
             var app = builder.Build();
 
@@ -35,6 +45,7 @@ namespace ReactTask
 
             app.UseAuthorization();
 
+            app.UseCors("Development");
 
             app.MapControllers();
 
