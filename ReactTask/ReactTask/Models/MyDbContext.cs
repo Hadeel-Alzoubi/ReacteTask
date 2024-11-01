@@ -43,10 +43,6 @@ public partial class MyDbContext : DbContext
                 .IsUnicode(false);
             entity.Property(e => e.Timestamp).HasColumnType("datetime");
 
-            entity.HasOne(d => d.EmployeeNavigation).WithMany(p => p.Audits)
-                .HasForeignKey(d => d.EmployeeId)
-                .HasConstraintName("FK__Audit__EmployeeI__3D5E1FD2");
-
             entity.HasOne(d => d.User).WithMany(p => p.Audits)
                 .HasForeignKey(d => d.Userid)
                 .HasConstraintName("FK__Audit__Userid__3E52440B");
@@ -67,11 +63,14 @@ public partial class MyDbContext : DbContext
 
             entity.ToTable("Employee");
 
-            entity.Property(e => e.Department).IsUnicode(false);
             entity.Property(e => e.Name).IsUnicode(false);
             entity.Property(e => e.Position)
                 .HasMaxLength(50)
                 .IsUnicode(false);
+
+            entity.HasOne(d => d.DepartmentNavigation).WithMany(p => p.Employees)
+                .HasForeignKey(d => d.Department)
+                .HasConstraintName("FK_Employee_Department");
         });
 
         modelBuilder.Entity<User>(entity =>

@@ -9,9 +9,11 @@ public partial class Employee
 
     public string? Name { get; set; }
 
-    public string? Department { get; set; }
-
     public string? Position { get; set; }
 
-    public virtual ICollection<Audit> Audits { get; set; } = new List<Audit>();
+    public int? Department { get; set; }
+
+    public bool? IsDeleted { get; set; }
+
+    public virtual Department? DepartmentNavigation { get; set; }
 }

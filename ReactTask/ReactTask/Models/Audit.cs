@@ -17,7 +17,5 @@ public partial class Audit
 
     public DateTime? Timestamp { get; set; }
 
-    public virtual Employee? EmployeeNavigation { get; set; }
-
     public virtual User? User { get; set; }
 }

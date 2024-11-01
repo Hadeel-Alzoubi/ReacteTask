@@ -17,70 +17,120 @@ namespace ReactTask.Controllers
             _db = db;
         }
 
-        [HttpGet("GetAllAduit")]
-        public async Task<IActionResult> GetAll()
+        [HttpGet("ShowAllAction")]
+        public async Task<IActionResult> ShowAllAction()
         {
-            var auditInfo = await _db.Audits.ToListAsync();
-            return Ok(auditInfo);
+            var all = _db.Audits.ToList();
+            return Ok(all);
         }
 
-        [HttpGet("GetAuditByID")]
-        public async Task<IActionResult> GetByID(int id)
+        [HttpGet("getAllEmployees")]
+        public async Task<IActionResult> getAllEmployees()
         {
-            var auditById = await _db.Audits.FirstOrDefaultAsync(x => x.Id == id);
-            return Ok(auditById);
+            var employees = _db.Employees.ToList();
+            return Ok(employees);
         }
 
-        [HttpPost("CreateAudit")]
-        public async Task<IActionResult> CreateAudit([FromForm] AuditRequestDTO dTO)
+        [HttpGet("getEmployeeById/{id}")]
+        public async Task<IActionResult> getEmployeeById(int id)
         {
-            var createAudit = new Audit
+            var employee = _db.Employees.Find(id);
+            if (employee == null)
             {
-                Action = dTO.Action,
-                Employee = dTO.Employee,
-                EmployeeId = dTO.EmployeeId,
-                Userid = dTO.Userid,
+                return BadRequest();
+            }
+            var audit = new Audit
+            {
+                Action = "Read",
+                Employee = employee.Name,
+                EmployeeId = employee.Id,
+                Userid = 1,
+                Timestamp = DateTime.Now
+
             };
+            _db.Audits.Add(audit);
+            await _db.SaveChangesAsync();
+            return Ok(employee);
+        }
 
-            await _db.Audits.AddAsync(createAudit);
+        [HttpPost("postEmployees")]
+        public async Task<IActionResult> postEmployees([FromForm] EmployeeDTO employee)
+        {
+            var addEmployee = new Employee
+            {
+                Name = employee.Name,
+                Position = employee.Position,
+                Department = employee.Department,
+            };
+            _db.Employees.Add(addEmployee);
+            await _db.SaveChangesAsync();
+
+            var audit = new Audit
+            {
+                Action = "Create",
+                Employee = employee.Name,
+                EmployeeId = addEmployee.Id,
+                Userid = 1,
+                Timestamp = DateTime.Now
+
+            };
+            _db.Audits.Add(audit);
+            await _db.SaveChangesAsync();
+            return Ok("Employee has been added successfuly");
+        }
+
+        [HttpPut("PutEmployee/{id}")]
+        public async Task<IActionResult> PutEmployee(int id, [FromForm] EmployeeDTO employee)
+        {
+            var existEmployee = _db.Employees.FirstOrDefault(x => x.Id == id);
+            if (existEmployee == null)
+            {
+                return BadRequest();
+            }
+            existEmployee.Name = employee.Name;
+            existEmployee.Position = employee.Position;
+            existEmployee.Department = employee.Department;
+            _db.Employees.Update(existEmployee);
+            await _db.SaveChangesAsync();
+
+            var audit = new Audit
+            {
+                Action = "Update",
+                Employee = existEmployee.Name,
+                EmployeeId = existEmployee.Id,
+                Userid = 1,
+                Timestamp = DateTime.Now
+
+            };
+            _db.Audits.Add(audit);
             await _db.SaveChangesAsync();
             return Ok();
         }
 
-        [HttpPut("EditAudit")]
-        public async Task<IActionResult> EditAudit(int id,[FromForm] AuditRequestDTO dTO)
+        [HttpDelete("deleteEmployee/{id}")]
+        public async Task<IActionResult> deleteEmployee(int id)
         {
-            var audit = await _db.Audits.FirstOrDefaultAsync(x => x.Id == id);
-            if (audit == null)
+            var employee = _db.Employees.Find(id);
+            if (employee == null)
             {
-                return NotFound();
+                return BadRequest();
             }
 
-            audit.Action = dTO.Action ?? audit.Action;
-            audit.Employee = dTO.Employee ?? audit.Employee;
-            audit.EmployeeId = dTO.EmployeeId ?? audit.EmployeeId;
-            audit.Userid = dTO.Userid ?? audit.Userid;
+            employee.IsDeleted = true;
 
-            _db.Audits.Update(audit);
-            await _db.SaveChangesAsync();
-
-            return Ok();
-        }
-
-        [HttpDelete("DeleteAudit")]
-        public async Task<IActionResult> deleteAudit(int id)
-        {
-            var audit = await _db.Audits.FirstOrDefaultAsync(x => x.Id == id);
-            if (audit == null)
+            var audit = new Audit
             {
-                return NotFound();
-            }
-            
-            _db.Audits.Remove(audit);
+                Action = "Delete",
+                Employee = employee.Name,
+                EmployeeId = employee.Id,
+                Userid = 1,
+                Timestamp = DateTime.Now
+
+            };
+            _db.Audits.Add(audit);
+
             await _db.SaveChangesAsync();
-
-            return Ok();
-        }
-
+            return NoContent();
+        } 
     }
 }

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ReactTask")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+664325f9e22e04988800a30aff88b4bc38cf9eb4")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+791000344a26fb452655d341ae087f956218ca5e")]
 [assembly: System.Reflection.AssemblyProductAttribute("ReactTask")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ReactTask")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

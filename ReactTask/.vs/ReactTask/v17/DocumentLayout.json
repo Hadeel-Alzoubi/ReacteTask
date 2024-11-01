@@ -3,6 +3,26 @@
   "WorkspaceRootPath": "C:\\Users\\Orange\\Desktop\\ReacteTask\\ReactTask\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{D8270385-16CE-43E1-9FDD-DC4EF9C044BB}|ReactTask\\ReactTask.csproj|c:\\users\\orange\\desktop\\reactetask\\reacttask\\reacttask\\controllers\\auditcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D8270385-16CE-43E1-9FDD-DC4EF9C044BB}|ReactTask\\ReactTask.csproj|solutionrelative:reacttask\\controllers\\auditcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D8270385-16CE-43E1-9FDD-DC4EF9C044BB}|ReactTask\\ReactTask.csproj|c:\\users\\orange\\desktop\\reactetask\\reacttask\\reacttask\\models\\mydbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D8270385-16CE-43E1-9FDD-DC4EF9C044BB}|ReactTask\\ReactTask.csproj|solutionrelative:reacttask\\models\\mydbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D8270385-16CE-43E1-9FDD-DC4EF9C044BB}|ReactTask\\ReactTask.csproj|c:\\users\\orange\\desktop\\reactetask\\reacttask\\reacttask\\models\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D8270385-16CE-43E1-9FDD-DC4EF9C044BB}|ReactTask\\ReactTask.csproj|solutionrelative:reacttask\\models\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D8270385-16CE-43E1-9FDD-DC4EF9C044BB}|ReactTask\\ReactTask.csproj|c:\\users\\orange\\desktop\\reactetask\\reacttask\\reacttask\\models\\department.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D8270385-16CE-43E1-9FDD-DC4EF9C044BB}|ReactTask\\ReactTask.csproj|solutionrelative:reacttask\\models\\department.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D8270385-16CE-43E1-9FDD-DC4EF9C044BB}|ReactTask\\ReactTask.csproj|c:\\users\\orange\\desktop\\reactetask\\reacttask\\reacttask\\dtos\\employeedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D8270385-16CE-43E1-9FDD-DC4EF9C044BB}|ReactTask\\ReactTask.csproj|solutionrelative:reacttask\\dtos\\employeedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{D8270385-16CE-43E1-9FDD-DC4EF9C044BB}|ReactTask\\ReactTask.csproj|c:\\users\\orange\\desktop\\reactetask\\reacttask\\reacttask\\dtos\\auditrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D8270385-16CE-43E1-9FDD-DC4EF9C044BB}|ReactTask\\ReactTask.csproj|solutionrelative:reacttask\\dtos\\auditrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -13,14 +33,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{D8270385-16CE-43E1-9FDD-DC4EF9C044BB}|ReactTask\\ReactTask.csproj|c:\\users\\orange\\desktop\\reactetask\\reacttask\\reacttask\\models\\audit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D8270385-16CE-43E1-9FDD-DC4EF9C044BB}|ReactTask\\ReactTask.csproj|solutionrelative:reacttask\\models\\audit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D8270385-16CE-43E1-9FDD-DC4EF9C044BB}|ReactTask\\ReactTask.csproj|c:\\users\\orange\\desktop\\reactetask\\reacttask\\reacttask\\models\\department.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D8270385-16CE-43E1-9FDD-DC4EF9C044BB}|ReactTask\\ReactTask.csproj|solutionrelative:reacttask\\models\\department.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D8270385-16CE-43E1-9FDD-DC4EF9C044BB}|ReactTask\\ReactTask.csproj|c:\\users\\orange\\desktop\\reactetask\\reacttask\\reacttask\\controllers\\auditcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D8270385-16CE-43E1-9FDD-DC4EF9C044BB}|ReactTask\\ReactTask.csproj|solutionrelative:reacttask\\controllers\\auditcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D8270385-16CE-43E1-9FDD-DC4EF9C044BB}|ReactTask\\ReactTask.csproj|c:\\users\\orange\\desktop\\reactetask\\reacttask\\reacttask\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
@@ -34,7 +46,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Bookmark",
@@ -42,15 +54,28 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Audit.cs",
-              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\ReacteTask\\ReactTask\\ReactTask\\Models\\Audit.cs",
-              "RelativeDocumentMoniker": "ReactTask\\Models\\Audit.cs",
-              "ToolTip": "C:\\Users\\Orange\\Desktop\\ReacteTask\\ReactTask\\ReactTask\\Models\\Audit.cs",
-              "RelativeToolTip": "ReactTask\\Models\\Audit.cs",
-              "ViewState": "AQIAAAcAAAAAAAAAAAAmwBcAAAAAAAAA",
+              "DocumentIndex": 1,
+              "Title": "MyDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\ReacteTask\\ReactTask\\ReactTask\\Models\\MyDbContext.cs",
+              "RelativeDocumentMoniker": "ReactTask\\Models\\MyDbContext.cs",
+              "ToolTip": "C:\\Users\\Orange\\Desktop\\ReacteTask\\ReactTask\\ReactTask\\Models\\MyDbContext.cs",
+              "RelativeToolTip": "ReactTask\\Models\\MyDbContext.cs",
+              "ViewState": "AQIAADkAAAAAAAAAAAAnwFUAAAAEAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-29T13:33:39.207Z",
+              "WhenOpened": "2024-11-01T18:32:49.363Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Employee.cs",
+              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\ReacteTask\\ReactTask\\ReactTask\\Models\\Employee.cs",
+              "RelativeDocumentMoniker": "ReactTask\\Models\\Employee.cs",
+              "ToolTip": "C:\\Users\\Orange\\Desktop\\ReacteTask\\ReactTask\\ReactTask\\Models\\Employee.cs",
+              "RelativeToolTip": "ReactTask\\Models\\Employee.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAA6wBEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-01T17:49:36.69Z",
               "EditorCaption": ""
             },
             {
@@ -68,7 +93,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 5,
               "Title": "AuditRequestDTO.cs",
               "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\ReacteTask\\ReactTask\\ReactTask\\DTOs\\AuditRequestDTO.cs",
               "RelativeDocumentMoniker": "ReactTask\\DTOs\\AuditRequestDTO.cs",
@@ -81,7 +106,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 6,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\ReacteTask\\ReactTask\\ReactTask\\Program.cs",
               "RelativeDocumentMoniker": "ReactTask\\Program.cs",
@@ -89,12 +114,11 @@
               "RelativeToolTip": "ReactTask\\Program.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAACMAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-28T18:08:11.261Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-28T18:08:11.261Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 8,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\ReacteTask\\ReactTask\\ReactTask\\appsettings.json",
               "RelativeDocumentMoniker": "ReactTask\\appsettings.json",
@@ -106,16 +130,41 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
               "Title": "AuditController.cs",
               "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\ReacteTask\\ReactTask\\ReactTask\\Controllers\\AuditController.cs",
               "RelativeDocumentMoniker": "ReactTask\\Controllers\\AuditController.cs",
               "ToolTip": "C:\\Users\\Orange\\Desktop\\ReacteTask\\ReactTask\\ReactTask\\Controllers\\AuditController.cs",
               "RelativeToolTip": "ReactTask\\Controllers\\AuditController.cs",
-              "ViewState": "AQIAAAoAAAAAAAAAAAAAwB0AAABAAAAA",
+              "ViewState": "AQIAADgAAAAAAAAAAAA5wE8AAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-28T18:00:16.537Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "EmployeeDTO.cs",
+              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\ReacteTask\\ReactTask\\ReactTask\\DTOs\\EmployeeDTO.cs",
+              "RelativeDocumentMoniker": "ReactTask\\DTOs\\EmployeeDTO.cs",
+              "ToolTip": "C:\\Users\\Orange\\Desktop\\ReacteTask\\ReactTask\\ReactTask\\DTOs\\EmployeeDTO.cs",
+              "RelativeToolTip": "ReactTask\\DTOs\\EmployeeDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-01T17:49:00.398Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Audit.cs",
+              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\ReacteTask\\ReactTask\\ReactTask\\Models\\Audit.cs",
+              "RelativeDocumentMoniker": "ReactTask\\Models\\Audit.cs",
+              "ToolTip": "C:\\Users\\Orange\\Desktop\\ReacteTask\\ReactTask\\ReactTask\\Models\\Audit.cs",
+              "RelativeToolTip": "ReactTask\\Models\\Audit.cs",
+              "ViewState": "AQIAAAcAAAAAAAAAAAAmwBcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-29T13:33:39.207Z"
             }
           ]
         }
